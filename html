@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BMI calculator.
+        </title>
+        <style>
+            body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(255, 200, 200);
+            /* font-family: Arial, sans-serif; */
+        }
+           #legend{
+            text-align: center;
+            background : rgb(111, 195, 21);
+            border-radius: 5px;
+            
+           }          
+           form {
+            padding: 100px;
+            /* padding:10%; */
+            align-items: center;
+            border-radius: 10px;
+            border: 10px solid #77e11b;
+            width:450px;
+            height: 250px;
+            background-color: #f9f9f9;
+            background-image: url("benjamin.jpg");
+            background-size: cover;
+            /* background-color: rgb(21, 19, 19) ; */
+        }
+        .form-group{
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            column-rule: whi;
+            /* margin-bottom: 10px; */
+        }
+
+        .form-group label {
+            width: 160px; /* fixed width for label to align inputs */
+            color : white;
+        }
+
+        .form-group input[type="number"] {
+            flex: 1;
+            padding: 6px;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            background-color: aquamarine;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        input {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1{
+            font-size: smaller;
+        }
+
+        p{
+            color : greenyellow;
+            text-align: center;
+        }
+        
+        </style>
+        <body>
+            <div class="flexbox">
+            <form id="form" >
+                <!-- <img src=> -->
+                <legend id="legend"><b>BMI Calculator</b></legend>
+            <!-- <div class="bmi_title">BMI Calculator</div> -->
+             <div class="form-group">
+            <label for="height">Height <br> <h1>Meters(m)</h1></label>
+            <input type="number" name="height" id="height"><br></div>
+
+            <div class="form-group">
+            <label for="weight">Weight <br> <h1>Kilogram(Kg)</h1></label>
+            <input type="number" name="weight" id="weight"><br></div>
+
+            <button id="btn" type="submit">Calculate</button>
+            <p id="result"></p>
+            </form>
+            </div>
+            <script src = "bmi.js"></script>
+            
+
+
+        </body>
+    </head>
+</html>
